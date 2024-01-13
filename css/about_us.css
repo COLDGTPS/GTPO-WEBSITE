@@ -117,13 +117,13 @@ html, body {
   .developerlist {
     display: inline-block;
     margin: 20px;
-    border: 1px solid #ff9d00;
+    border: 1px solid #eeff00;
     float: center;
-    width: 300px;
+    width: 500px;
   }
   
   .developerlist img {
-    width: 50%;
+    width: 100%;
     height: auto;
   }
   
