@@ -1,16 +1,22 @@
 html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
-    overflow: auto;
-  }
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #3c3c3c34;
+  overflow: auto;
+  background-image: url("./images/about_us_bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
   
   header {
     height: 50px;
     width: 100%;
-    background-color: #000000;
+    background-color: #0000005d;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -131,12 +137,13 @@ html, body {
     padding: 15px;
     text-align: center;
     color: #ffffff;
+    background-color:#00000046;
     font-size: 20px;
   }  
 
   footer {
-    color: white;
-    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
   }
   
   

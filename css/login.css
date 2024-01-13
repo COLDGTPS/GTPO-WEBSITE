@@ -3,20 +3,14 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #3c3c3c34;
+    background-color: #121212;
     overflow: auto;
-    background-image: url("./images/main1.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 100vh;
   }
   
   header {
     height: 50px;
     width: 100%;
-    background-color: #0000006a;
+    background-color: #000000;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -76,14 +70,13 @@ html, body {
   .desc {
     padding: 15px;
     text-align: center;
-    background-color: #0000009a;
     color: #ffffff;
     font-size: 20px;
   }  
 
   footer {
     color: white;
-    font-size: 30px;
+    font-size: 18px;
   }
   
   
