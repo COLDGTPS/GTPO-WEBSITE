@@ -72,6 +72,66 @@ html, body {
     text-align: center;
     color: #ffffff;
     font-size: 20px;
+  } 
+
+  .founderlist {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #010101;
+    float: center;
+    width: 300px;
+  }
+  
+  .founderlist img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .desc {
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+  }  
+
+   .cofounderlist {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #eeff00;
+    float: center;
+    width: 300px;
+  }
+  
+  .cofounderlist img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .desc {
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+  }  
+
+  .developerlist {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #ff9d00;
+    float: center;
+    width: 300px;
+  }
+  
+  .developerlist img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .desc {
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
   }  
 
   footer {
