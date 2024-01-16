@@ -24,15 +24,24 @@
     <button onclick="window.location.href='about_us.html'" target="_blank">ABOUT US</button>
     <button onclick="window.location.href='shop_page.html'" target="_blank">SHOP</button>
     <button onclick="window.open('gtpops.xyz/discord')" target="_blank">DISCORD</button>
-    <button onclick="window.location.href='how_to_play.html'" target="_blank">HOW TO PLAY</button>
-    <div style="float: right;">
-      Current Server Status: <span class="up">UP!</span>
-    </div>
   </header>
   <div class="support-text">Support for anything related to GTPO.</div>
-  <div class="support-description-text">support@gtpops.xyz</div>
+  <div class="copy-box">
+    <div class="support-description-text">support@gtpops.xyz</div>
+    <img class="copy-icon" src="https://img.icons8.com/material-outlined/24/000000/copy.png" alt="Copy" onclick="copyToClipboard()">
+  </div>
   <div class="billing-text">Support for billing.</div>
-  <div class="billing-description-text">billing@gtpops.xyz</div>
+  <div class="copy-box">
+    <div class="billing-description-text">billing@gtpops.xyz</div>
+    <img class="copy-icon" src="https://img.icons8.com/material-outlined/24/000000/copy.png" alt="Copy" onclick="copyToClipboard()">
+  </div>
+  <script>
+    function copyToClipboard() {
+      const text = document.querySelector('.billing-description-text').textContent;
+      navigator.clipboard.writeText(text);
+      alert('Copied to clipboard!');
+    }
+  </script>
 <footer>
   <p style="text-align: center;">© 2024 GTPO. All rights reserved.</p>
 </footer>

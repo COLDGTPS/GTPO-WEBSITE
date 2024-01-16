@@ -1,16 +1,22 @@
 html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #121212;
-    overflow: auto;
-  }
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #3c3c3c34;
+  overflow: auto;
+  background-image: url("./images/login_page_bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+}
   
   header {
     height: 50px;
     width: 100%;
-    background-color: #000000;
+    background-color: #0000005c;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,32 +63,52 @@ html, body {
   .support-text {
     font-size: 24px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
-    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
   }
   .support-description-text {
     font-size: 20px;
-    font-weight: normal;
-    color: rgb(249, 249, 249);
-    margin-top: 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
   }
 
   .billing-text {
     font-size: 24px;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin-top: 40px;
   }
   .billing-description-text {
     font-size: 20px;
-    font-weight: normal;
-    color: rgb(249, 249, 249);
-    margin-top: 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+  }
+  
+  .copy-box {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    background-color: #00000061;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .copy-box .copy-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
   }
 
   footer {
-    color: white;
-    font-size: 18px;
+    color: rgb(1, 1, 1);
+    font-size: 30px;
   }
   
   
