@@ -86,7 +86,19 @@ html, body {
     margin-top: 20px;
   }
   
-  .copy-box {
+  .support-copy-box {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    background-color: #00000061;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .billing-copy-box {
     position: relative;
     display: inline-block;
     margin: 10px;
