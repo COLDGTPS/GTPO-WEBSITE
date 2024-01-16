@@ -8,20 +8,80 @@
 <body>
   <header>
     <img src="./images/logos/gtpotext.png" alt="Logo" style="float: left;">
-    <button onclick="window.location.href='index.html'" target="_blank">ABOUT US</button>
+    <button onclick="window.location.href='index.html'" target="_blank">HOME</button>
+    <button onclick="window.location.href='about_us.html'" target="_blank">ABOUT US</button>
     <button onclick="window.location.href='help_page.html'" target="_blank">HELP</button>
     <button onclick="window.location.href='shop_page.html'" target="_blank">SHOP</button>
     <button onclick="window.open('gtpops.xyz/discord')" target="_blank">DISCORD</button>
-    <button onclick="window.location.href='login.html'" style="float: right" target="_blank">LOGIN</button>
   </header>
-  <div class="gallery">
-    <img src="./images/home-images/website_is_live.jpg" alt="Image 1">
-    <div class="desc">GTPO website has arived maybe looks a little bit basic but we are working to improve it anways! -GTPO TEAM (DEVELOPER - COLD)</div>
-  </div>
-<div class="gallery">
-  <img src="./images/home-images/gtpo_is_here.jpg" alt="Image 1">
-  <div class="desc">GTPO server is finally here join our discord for more info! - GTPO TEAM (DEVELOPER - COLD)</div>
-</div>
+  <!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyA04WfAExhGTyrtrpl0_m0qG85iR5hk5PI",
+      authDomain: "gtpops-7136a.firebaseapp.com",
+      projectId: "gtpops-7136a",
+      storageBucket: "gtpops-7136a.appspot.com",
+      messagingSenderId: "578457831565",
+      appId: "1:578457831565:web:6e6060165a7486ec463ac4",
+      measurementId: "G-PBY0VPVE28"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    function login() {
+        const email = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        firebase.auth().signInWithEmailAndPassword(email, password)
+          .then((userCredential) => {
+            // Redirect to dashboard page
+            window.location.href = "dashboard.html";
+          })
+          .catch((error) => {
+            // Display error message
+            alert(error.message);
+          });
+      }
+      function register() {
+        const email = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+          .then((userCredential) => {
+            // Redirect to dashboard page
+            window.location.href = "dashboard.html";
+          })
+          .catch((error) => {
+            // Display error message
+            alert(error.message);
+          });
+      }
+  </script>
+  <body>
+    <div class="form-container">
+      <form>
+        <label for="username">Email:</label>
+        <input type="text" id="username" name="username" class="input-box"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" class="input-box"><br><br>
+        <button type="submit" class="submit-button" onclick="login()">Login</button>
+        <label for="username">or</label>
+        <button type="sumbit" class="submit-button" onclick="register()">Register</button>
+      </form>
+    </div>
+  </body>
 
 <footer>
   <p style="text-align: center;">© 2024 GTPO. All rights reserved.</p>
