@@ -29,13 +29,20 @@
   <div class="support-text">Support for anything related to GTPO.</div>
   <div class="support-copy-box">
     <div class="support-description-text">support@gtpops.xyz</div>
-    <img class="copy-icon" src="https://img.icons8.com/material-outlined/24/000000/copy.png" alt="Copy" onclick="copyToClipboard()">
+    <img class="support-copy-icon" src="https://img.icons8.com/material-outlined/24/000000/copy.png" alt="Copy" onclick="copyToClipboard()">
   </div>
   <div class="billing-text">Support for billing.</div>
   <div class="billing-copy-box">
     <div class="billing-description-text">billing@gtpops.xyz</div>
-    <img class="copy-icon" src="https://img.icons8.com/material-outlined/24/000000/copy.png" alt="Copy" onclick="copyToClipboard()">
+    <img class="billing-copy-icon" src="https://img.icons8.com/material-outlined/24/000000/copy.png" alt="Copy" onclick="copyToClipboard()">
   </div>
+  <script>
+    function copyToClipboard() {
+      const text = document.querySelector('.support-description-text').textContent;
+      navigator.clipboard.writeText(text);
+      alert('Copied to clipboard!');
+    }
+  </script>
   <script>
     function copyToClipboard() {
       const text = document.querySelector('.billing-description-text').textContent;

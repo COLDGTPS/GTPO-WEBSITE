@@ -66,6 +66,7 @@ html, body {
     color: rgb(0, 0, 0);
     margin-top: 40px;
   }
+
   .support-description-text {
     font-size: 20px;
     font-weight: bold;
@@ -73,19 +74,6 @@ html, body {
     margin-top: 20px;
   }
 
-  .billing-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    margin-top: 40px;
-  }
-  .billing-description-text {
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    margin-top: 20px;
-  }
-  
   .support-copy-box {
     position: relative;
     display: inline-block;
@@ -98,6 +86,28 @@ html, body {
     line-height: 1.5;
   }
 
+  .support-copy-box .support-copy-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .billing-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
+  }
+
+  .billing-description-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+  }
+  
   .billing-copy-box {
     position: relative;
     display: inline-block;
@@ -110,7 +120,7 @@ html, body {
     line-height: 1.5;
   }
 
-  .copy-box .copy-icon {
+  .billing-copy-box .billing-copy-icon {
     position: absolute;
     top: 50%;
     right: 10px;
