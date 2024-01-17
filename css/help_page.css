@@ -94,40 +94,6 @@ html, body {
     cursor: pointer;
   }
 
-  .billing-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    margin-top: 40px;
-  }
-
-  .billing-description-text {
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    margin-top: 20px;
-  }
-  
-  .billing-copy-box {
-    position: relative;
-    display: inline-block;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #000000;
-    border-radius: 20px;
-    background-color: #00000061;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .billing-copy-box .billing-copy-icon {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-
   footer {
     color: rgb(1, 1, 1);
     font-size: 30px;
