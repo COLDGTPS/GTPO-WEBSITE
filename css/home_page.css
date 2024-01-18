@@ -3,9 +3,9 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #3c3c3c34;
+    background-color: #3c3c3cd0;
     overflow: auto;
-    background-image: url("./images/main1.jpg");
+    background-image: url("./images/night_background.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@ html, body {
   header {
     height: 50px;
     width: 100%;
-    background-color: #0000006a;
+    background-color: #0000009b;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
