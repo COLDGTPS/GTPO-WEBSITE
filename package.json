@@ -18,5 +18,8 @@
   "homepage": "https://github.com/COLDGTPS/GTPO-WEBSITE#readme",
   "devDependencies": {
     "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "firebase": "^10.7.2"
   }
 }
