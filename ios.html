@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>GlobalPS | IPhone</title>
+<!--Icons-->
+<link rel="icon" type="image/png" href="./files/img/GlobalPS-Valentine-Icon.jpg" sizes="16x16">
+<link rel="shortcut icon" href="./files/img/GlobalPS-Valentine-Icon.jpg" type="image/x-icon">
+<link rel="icon" href="./files/img/GlobalPS-Valentine-Icon.jpg" type="image/x-icon">
+<!--CSS-->
+<meta name="color-scheme" content="light dark">
+<style>
+/* Style the buttons */
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Style the text */
+.text {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+</style>
+</head>
+<body>
+<!-- Add two buttons with onclick events -->
+<button class="button" onclick="showIndonesian()">Indonesian</button>
+<button class="button" onclick="showEnglish()">English</button>
+
+<!-- Add a pre element to display the text -->
+<pre id="text" class="text">
+    Choose language!
+</pre>
+
+<!-- Add a script to change the text content -->
+<script>
+// Define the text in both languages
+var textIndonesian = "    Unduh Aplikasi bernama: Surge 5 dari App Store\n    Tekan OKE.\n    Klik pada Default.conf.\n    Klik bagian IMPORT -> Unduh Profil dari URL.\n    Masukkan url https://globalps.xyz/iosconfig dan klik OK dan Selesai\n    Tekan SETUP lalu setujui kebijakan dengan mengklik OK dan Allow untuk Konfigurasi VPN!. \n    Selesai, lalu buka Growtopia dan Connect!";
+var textEnglish = "    Download App called: Surge 5 from App Store\n    Press OK.\n    Click on Default.conf.\n    Click on IMPORT part -> Download Profile from URL.\n    Put url https://globalps.xyz/iosconfig and click OK and Done\n    Press SETUP and then agree to policy by clicking OK and Allow for VPN Configuration!.\n    Done, then open Growtopia and Connect!";
+
+// Get the text element by id
+var textElement = document.getElementById("text");
+
+// Define the functions to show the text in different languages
+function showIndonesian() {
+  textElement.textContent = textIndonesian;
+}
+
+function showEnglish() {
+  textElement.textContent = textEnglish;
+}
+</script>
+</body>
+</html>
