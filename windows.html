@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>GlobalPS | Windows</title>
+<!--Icons-->
+<link rel="icon" type="image/png" href="./files/img/GlobalPS-Valentine-Icon.jpg" sizes="16x16">
+<link rel="shortcut icon" href="./files/img/GlobalPS-Valentine-Icon.jpg" type="image/x-icon">
+<link rel="icon" href="./files/img/GlobalPS-Valentine-Icon.jpg" type="image/x-icon">
+<!--CSS-->
+<meta name="color-scheme" content="light dark">
+<style>
+/* Style the buttons */
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Style the text */
+.text {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+</style>
+</head>
+<body>
+<!-- Add two buttons with onclick events -->
+<button class="button" onclick="showIndonesian()">Indonesian</button>
+<button class="button" onclick="showEnglish()">English</button>
+
+<!-- Add a pre element to display the text -->
+<pre id="text" class="text">
+    Choose language!
+</pre>
+
+<!-- Add a script to change the text content -->
+<script>
+// Define the text in both languages
+var textIndonesian = "    1.Tekan ⊞ Win+R (Windows Key + R) secara bersamaan untuk membuka kotak textbox untuk membuka Run window.\n    2.Lalu ketik C:Windows/System32/drivers/etc di textbox yang kosong tersebut.\n    3.Kalau sudah terbuka, carilah file yang bernama hosts\n    4.Klik kanan host tersebut, lalu arahkan keluar folder yang sedang kamu buka, atau desktop komputer kamu. Klik kiri dua kali hosts file-nya lalu edit pakai aplikasi Notepad atau Text Editor.\n    5.Kalau sudah terbuka, scroll ke bawah sampai kalian menemukan bagian kosong di dalam hosts file tersebut lalu copy & paste IP ke dalam hosts file nya: \n    35.192.94.233 www.growtopia1.com \n    35.192.94.233 www.growtopia2.com \n    6.Klik file di bagian pojok kiri, lalu tekan save, klik kanan hosts file nya, lalu arahkan kembali ke folder yang pertama kali kamu buka, atau System32.";
+var textEnglish = "    1.Press ⊞ Win+R (Windows Key + R) to open up the Run window.\n    2.Type in C:/Windows/System32/drivers/etc in the textbox.\n    3.Find file named hosts.\n    4. Right-click on hosts file and edit it with Notepad/text editor.\n    5.Add in the IP:\n    35.192.94.233 www.growtopia1.com\n    35.192.94.233 www.growtopia2.com\n    6.Save the file.";
+
+// Get the text element by id
+var textElement = document.getElementById("text");
+
+// Define the functions to show the text in different languages
+function showIndonesian() {
+  textElement.textContent = textIndonesian;
+}
+
+function showEnglish() {
+  textElement.textContent = textEnglish;
+}
+</script>
+</body>
+</html>
