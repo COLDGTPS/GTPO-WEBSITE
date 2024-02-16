@@ -1,0 +1,38 @@
+:root {
+    background-color:#282828;
+}
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #000000;
+        padding: 0px 10px;
+    }
+
+    .header img {
+        height: 130px;
+        padding: -20px;
+    }
+.activity-button {
+    background-color: #00396a;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.activity-button:hover {
+    background-color:#269aff;
+}
+
+#footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.copy-right {
+    margin: 0px 400px;
+    color: #fcfcfc;
+    font-size: 18px;
+}
